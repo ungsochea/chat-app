@@ -1,9 +1,10 @@
 require('./bootstrap');
 
 window.Vue = require('vue');
+Vue.use(require('vue-chat-scroll'))
 
 
-Vue.component('example-component', require('./components/ExampleComponent.vue'));
+Vue.component('chat-component', require('./components/ChatComponent.vue'));
 
 
 const app = new Vue({

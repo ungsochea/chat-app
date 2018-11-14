@@ -27,7 +27,7 @@ class HomeController extends Controller
     {
         
         // return new UserResource(auth()->user());
-        return UserResource::collection(User::all());
+        // return UserResource::collection(User::all());
         return view('home');
     }
 }
